@@ -14,10 +14,10 @@ body {
 
 .container {
   background-color: rgb(249, 236, 236);
-
 }
 
 .container.show-nav {
   transform: rotate(-20deg);
   transform-origin: top left;
+  transition: transform 0.5s linear;
 }
