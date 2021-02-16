@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-
-* {
+@import url(''https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&display=swap'')
+  ; * {
   box-sizing: border-box;
 }
 
@@ -49,6 +48,7 @@ body {
   border: none;
   font-size: 26px;
   color: white;
+  cursor: pointer;
 }
 
 .circle button:focus {
@@ -63,4 +63,25 @@ body {
   top: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.content small {
+  font-size: 18px;
+  color: rgb(245, 118, 147);
+  font-style: italic;
+  font-weight: 800;
 }
