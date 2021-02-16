@@ -1,15 +1,7 @@
-const panels = document.querySelectorAll('.panel');
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const container = document.querySelector('.container');
 
-panels.forEach((panel) => {
-  console.log(panel);
-  panel.addEventListener('click', () => {
-    removeActiveClasses();
-    panel.classList.add('active');
-  });
-});
+open.addEventListener('click', () => container.classList.add('show-nav'));
 
-// function removeActiveClasses() {
-//   panels.forEach((panel) => {
-//     panel.classList.remove('active');
-//   });
-// }
+close.addEventListener('click', () => container.classList.remove('show-nav'));
